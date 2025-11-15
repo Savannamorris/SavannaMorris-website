@@ -15,14 +15,14 @@
 
         /* Header with dark blue background */
         header {
-            background-color: #0a3d62; /* dark blue */
+            background-color: #0a3d62;
             color: white;
             padding: 40px 20px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
 
-        /* Headshot Circle */
         .headshot {
             width: 120px;
             height: 120px;
@@ -32,7 +32,6 @@
             margin-right: 20px;
         }
 
-        /* Name and Title */
         .header-info {
             flex: 1;
         }
@@ -45,6 +44,20 @@
         .header-info p {
             margin: 5px 0 0 0;
             font-size: 1.1em;
+        }
+
+        /* Resume download button */
+        .resume-button {
+            background-color: #ffc107;
+            color: #0a3d62;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .resume-button:hover {
+            background-color: #e0a800;
         }
 
         main {
@@ -90,6 +103,10 @@
             color: #777;
         }
 
+        p {
+            margin: 5px 0 10px 0;
+        }
+
         a {
             color: #0a3d62;
             text-decoration: none;
@@ -105,19 +122,22 @@
             font-size: 0.9em;
             margin-bottom: 20px;
         }
-
     </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <img src="headshot.jpg" alt="Savanna Morris Headshot" class="headshot">
-        <div class="header-info">
-            <h1>Savanna Morris</h1>
-            <p>Information Science & Technology Student with a Cyber Security Certificate</p>
-            <p>College Student</p>
+        <div style="display: flex; align-items: center;">
+            <img src="savannamorris_headshot.jpg" alt="Savanna Morris Headshot" class="headshot">
+            <div class="header-info">
+                <h1>Savanna Morris</h1>
+                <p>Information Science & Technology Student with a Cyber Security Certificate</p>
+                <p>College Student</p>
+            </div>
         </div>
+        <!-- Resume Button -->
+        <a href="Savanna_Morris_Resume.pdf" class="resume-button" download>Download Resume</a>
     </header>
 
     <!-- Main Content -->
@@ -128,16 +148,25 @@
             <h2>Work History</h2>
             <ul>
                 <li>
-                    <span class="job-title">Data Center technition</span> 
+                    <span class="job-title">Data Center Technician</span> 
                     <span class="job-dates">Jun 2025 – Present</span><br>
                     <span class="job-company">Teksystems, Menomonee Falls, WI</span>
-                    <p>Over seeing Data center for multi million dollar Company</p>
+                    <p>
+                        Monitored and maintained data center systems to ensure optimal performance and uptime.<br>
+                        Accepted tasks and documented status using ticketing system.<br>
+                        Performed routine checks on servers to maintain operational standards.
+                    </p>
                 </li>
                 <li>
                     <span class="job-title">Assistant / Research</span> 
                     <span class="job-dates">Jun 2024 – Sep 2025</span><br>
                     <span class="job-company">CoffeeVille, Jackson, WI</span>
-                    <p>Handled esspresso machines and register </p>
+                    <p>
+                        Prepared specialty drinks, ensuring top quality and customer satisfaction.<br>
+                        Efficiently multitasked between drink preparation, food service, and customer interactions.<br>
+                        Worked with a team to maintain clean, efficient cafe operations.<br>
+                        Recognized for fast kitchen service, ensuring timely food delivery.
+                    </p>
                 </li>
             </ul>
         </section>
@@ -146,8 +175,11 @@
         <section>
             <h2>Education & Important Classes</h2>
             <ul>
-                <li>B.S. Information Science & Technology, University of Wisconsin Milwaukee, Expected  Dec 2026</li>
-                <li>Important Classes: Data Structures, Web Development,</li>
+                <li>B.S. Information Science & Technology, University of Wisconsin Milwaukee, Expected Dec 2026</li>
+                <li>Cyber Security Certificate, Expected Dec 2026</li>
+                <li>Important Classes: Information Security I & II, Ethical Hacking I, Data Structures and Algorithms, 
+                    System Programming, Web Application Development, Computer Science I & II, Introduction to Application Development
+                </li>
             </ul>
         </section>
 
@@ -167,7 +199,11 @@
         <section>
             <h2>Projects</h2>
             <ul>
-                <li><strong>Secret Santa:</strong> Created the HTML page for a Secret Santa page for friends</li>
+                 <li>
+                    <strong>Secret Santa Project</strong> – <a href="https://morri296.soisweb.uwm.edu/SecretSanta%20/Santa/" target="_blank">View Project</a>  
+                    – Designed with HTML a Secret Santa site for friends.
+                 </li>
+            </ul>
         </section>
 
     </main>
