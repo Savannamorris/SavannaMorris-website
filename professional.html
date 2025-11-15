@@ -1,47 +1,60 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>Professional Portfolio - Savanna Morris</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Portfolio</h1>
-        <p>Information Science & Technology • Projects • Resume</p>
-        <nav>
-            <a href="index.html">← Back to Homepage</a>
-        </nav>
-    </header>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
 
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am an Information Science and Technology student with experience in web
-            development, UX/UI, and data organization. I enjoy solving real-world
-            problems through technology and design.
-        </p>
-    </section>
+            <header id="header">
+                <h1>Professional Portfolio</h1>
+                <p>Information Science & Technology • Projects • Resume</p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="icon solid fa-home"><span class="label">Home</span></a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Description of what it is and what you did.</li>
-            <li><strong>Project 2:</strong> Description of your skills and results.</li>
-            <li><strong>Project 3:</strong> What technologies were used.</li>
-        </ul>
-    </section>
+            <section style="color: white; max-width: 700px; margin: auto;">
+                <h2>About Me</h2>
+                <p>
+                    I am an Information Science and Technology student with experience in web
+                    development, UX/UI, and data organization. I enjoy solving real-world
+                    problems through technology and design.
+                </p>
 
-    <section>
-        <h2>Resume</h2>
-        <p>You can download my resume below:</p>
-        <a href="your-resume.pdf" class="button">Download Resume</a>
-    </section>
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Project 1:</strong> Description of what it is and what you did.</li>
+                    <li><strong>Project 2:</strong> Description of your skills and results.</li>
+                    <li><strong>Project 3:</strong> What technologies were used.</li>
+                </ul>
 
-    <footer>
-        <p>&copy; Savanna Morris</p>
-    </footer>
+                <h2>Resume</h2>
+                <p>You can download my resume below:</p>
+                <a href="your-resume.pdf" class="button">Download Resume</a>
+            </section>
+
+            <footer id="footer">
+                <span class="copyright">&copy; Savanna Morris</span>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
 </body>
 </html>
