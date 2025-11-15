@@ -6,72 +6,174 @@
     <title>Professional Portfolio - Savanna Morris</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4; /* light gray background */
-            color: #333; /* dark text */
-            padding: 20px;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        header, section, footer {
-            max-width: 800px;
-            margin: auto;
+
+        /* Header with dark blue background */
+        header {
+            background-color: #0a3d62; /* dark blue */
+            color: white;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Headshot Circle */
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-right: 20px;
+        }
+
+        /* Name and Title */
+        .header-info {
+            flex: 1;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        .header-info p {
+            margin: 5px 0 0 0;
+            font-size: 1.1em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        section {
             margin-bottom: 30px;
         }
-        h1, h2 {
-            color: #222;
+
+        section h2 {
+            border-bottom: 2px solid #0a3d62;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #0a3d62;
         }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .job-company {
+            font-style: italic;
+            color: #555;
+        }
+
+        .job-dates {
+            float: right;
+            color: #777;
+        }
+
         a {
-            color: #0077cc;
+            color: #0a3d62;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0077cc;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 20px;
         }
-        .button:hover {
-            background-color: #005fa3;
-        }
+
     </style>
 </head>
 <body>
 
+    <!-- Header -->
     <header>
-        <h1>Professional Portfolio</h1>
-        <p>Information Science & Technology • Projects • Resume</p>
-        <nav>
-            <a href="index.html">← Back to Homepage</a>
-        </nav>
+        <img src="headshot.jpg" alt="Savanna Morris Headshot" class="headshot">
+        <div class="header-info">
+            <h1>Savanna Morris</h1>
+            <p>Information Science & Technology Student with a Cyber Security Certificate</p>
+            <p>College Student</p>
+        </div>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am an Information Science and Technology student with experience in web development, UX/UI, and data organization. I enjoy solving real-world problems through technology and design.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Description of what it is and what you did.</li>
-            <li><strong>Project 2:</strong> Description of your skills and results.</li>
-            <li><strong>Project 3:</strong> Technologies used.</li>
-        </ul>
-    </section>
+        <!-- Work History -->
+        <section>
+            <h2>Work History</h2>
+            <ul>
+                <li>
+                    <span class="job-title">Data Center technition</span> 
+                    <span class="job-dates">Jun 2025 – Present</span><br>
+                    <span class="job-company">Teksystems, Menomonee Falls, WI</span>
+                    <p>Over seeing Data center for multi million dollar Company</p>
+                </li>
+                <li>
+                    <span class="job-title">Assistant / Research</span> 
+                    <span class="job-dates">Jun 2024 – Sep 2025</span><br>
+                    <span class="job-company">CoffeeVille, Jackson, WI</span>
+                    <p>Handled esspresso machines and register </p>
+                </li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Resume</h2>
-        <p>You can download my resume below:</p>
-        <a href="Savanna_Morris_Resume.pdf" class="button">Download Resume</a>
-    </section>
+        <!-- Education / Important Classes -->
+        <section>
+            <h2>Education & Important Classes</h2>
+            <ul>
+                <li>B.S. Information Science & Technology, University of Wisconsin Milwaukee, Expected  Dec 2026</li>
+                <li>Important Classes: Data Structures, Web Development,</li>
+            </ul>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development: HTML, CSS, JavaScript, PHP</li>
+                <li>Other Coding Languages: Java, Python, C, C#</li>
+                <li>Data Management: SQL, Excel</li>
+                <li>Design: Adobe Photoshop, Figma</li>
+                <li>Other: Problem Solving, Communication, Teamwork</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Secret Santa:</strong> Created the HTML page for a Secret Santa page for friends</li>
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; Savanna Morris</p>
+        &copy; 2025 Savanna Morris
     </footer>
 
 </body>
